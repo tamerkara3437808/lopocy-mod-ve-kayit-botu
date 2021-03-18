@@ -17,4 +17,4 @@ bot.js de gezerek bulabilcehiniz basit yerler var onlarıda doldurduktan sonra a
 Önemli Not : Altyapıdaki Kodlar Arasında Serendia'dan Alınan Kodlarda Vardır Bilginize ...
 
 
-Yardım Ve Destek İcin https://discord.gg/nodejs
+Yardım Ve Destek İcin https://discord.gg/6ZBfaNZpYx
