@@ -149,7 +149,7 @@ client.on("ready", async() => {
  
     //////////////////////AFK
 
-
+////////voice log///////
     
     client.on('voiceStateUpdate', (oldMember, newMember) => {
         { 
@@ -178,7 +178,7 @@ client.on('messageDelete', message => {
         lore.set(`snipe.kanal.${message.guild.id}`, message.channel.id)
       
       })
-
+//////////--------Modlog Başlangıç---------//////////
 client.on('guildBanAdd', async (guild, user) => {
   let modlogs = db.get(`modlogkanaly_${guild.id}`)
   const modlogkanal = guild.channels.cache.find(kanal => kanal.id === modlogs);
@@ -401,9 +401,9 @@ client.on("messageDelete", async deletedMessage => {
     );
   scbul.send(embed);
 });
+///////--------------Modlog Son----------////////////
 
-
-////
+////  Etiket Tag Rol
 
 client.on("userUpdate", async function(oldUser, newUser) {
   const guildID = "820322898400116766"//sunucu
@@ -441,7 +441,7 @@ client.on("userUpdate", async function(oldUser, newUser) {
 
 
 
-//////
+//////   
 
 const kiltifat = [
   'Gözlerindeki saklı cenneti benden başkası fark etsin istemiyorum.',
@@ -482,7 +482,7 @@ client.on("message", async message => {
   };
 });
 
-
+/////// Sunucu İçinde Tag Alma Kısmı
 
         client.on("userUpdate", async (oldUser, newUser) => {
         if (oldUser.username !== newUser.username) {
@@ -510,7 +510,7 @@ client.on("message", async message => {
       
         
 //---------------------------------------------------spotify engel-----------------------------------------------------\\
-
+////   Sunucuya Katıldıhındaki Tag Rol Kısmı
 client.on("guildMemberAdd", member => {
   let sunucuid = "820322898400116766"; 
   var tag = 'Long';
@@ -522,7 +522,7 @@ member.roles.add(rol)
 }
 })
 
-
+///////// Embedsiz Webhooklu Hg Mesajı Slaşları Kaldırıp Aktif Hala Getirebilirsiniz
 
  //client.on("guildMemberAdd", member => {  
   // const lorewebhook = new Discord.WebhookClient('820381216762757130', 'oi_W6k2qpQNAR78fMNTRyxDhlUIq2Cy1Pi-tK_xDdG3V6Q-O2ga6tUmlM4CLpCD1inxK')
@@ -543,7 +543,7 @@ member.roles.add(rol)
 
 
 
-//////xp sstm.
+//////Snipe
 
 client.on("messageDelete", async message => {
   if (message.channel.type === "dm" || !message.guild || message.author.bot) return;
@@ -554,7 +554,7 @@ client.on("messageDelete", async message => {
 
 
 
-///random gif pp
+///random gif pp  (Serendiadan Alıntı)
 
 client.on(`userUpdate`, (oldUser, newUser) => {
   let renk = "4b0101"
@@ -577,9 +577,9 @@ if(avatar.endsWith('.gif')) {
   .setDescription(`**Resimi görüntülemek için** [**Buraya Tıkla**](${newUser.avatarURL({ dynamic: true, format: "png", size: 1024 })})`)
   gif.send(savagegif)
 }
-}) // SAVAGE SIZI COK SEVIYOOO <3
+}) 
 
-/////ayarlamalı sözcuk filtr
+////// Pquen Discordunda Görüp Yaptığım Bir Kod
 
 //client.on('message', async message => { if(message.guild.id === "786477463940497449") {///Sunucu id 
 //if(message.channel.id === "816588740888625214"){//// kanal id 
