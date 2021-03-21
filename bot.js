@@ -524,19 +524,18 @@ member.roles.add(rol)
 
 ///////// Embedsiz Webhooklu Hg Mesajı Slaşları Kaldırıp Aktif Hala Getirebilirsiniz
 
- //client.on("guildMemberAdd", member => {  
-  // const lorewebhook = new Discord.WebhookClient('820381216762757130', 'oi_W6k2qpQNAR78fMNTRyxDhlUIq2Cy1Pi-tK_xDdG3V6Q-O2ga6tUmlM4CLpCD1inxK')
+client.on("guildMemberAdd", member => {  
+ const lorewebhook = new Discord.WebhookClient('823282313579987014', '_jdwMoSRo6faqjdwr7a0texzblWabEefXio2R66XeAGfnwiYudyISddgwFajUfSUCph-')
       
- //   let user = client.users.cache.get(member.id);
-   //   require("moment-duration-format");
-     //   const kurulus = new Date().getTime() - user.createdAt.getTime();  
-  //  const gecen = moment.duration(kurulus).format(`YY **[Yıl,]** DD **[Gün,]** HH **[Saat,]** mm **[Dakika,]** ss **[Saniye]**`) 
+  let user = client.users.cache.get(member.id);
+  require("moment-duration-format");
+  const kurulus = new Date().getTime() - user.createdAt.getTime();  
+const gecen = moment.duration(kurulus).format(`YY **[Yıl,]** DD **[Gün,]** HH **[Saat,]** mm **[Dakika,]** ss **[Saniye]**`) 
      
-  
-    //moment.locale("tr");
-  //lorewebhook.send(":tada: **long'a hoş geldin** <@" + member + "> \n\n<@&820323637743583253> rolüne sahip yetkililer senin ile ilgilenecektir. \n\n **Hesabın \`"+ gecen +"\` Önce Oluşturulmuş** \n\nSunucu kurallarımız <#820327229195026482> kanalında belirtilmiştir. Unutma sunucu içerisinde ki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek. \n\nsunucumuzun \`" + member.guild.memberCount + "\` üyesi olmanı sağladı! İyi eğlenceler. ");
- //   member.setNickname(` İsim | Yaş`);
-   /// });
+moment.locale("tr");
+lorewebhook.send(":tada: **03'e hoş geldin** <@" + member + "> \n\n<@&823249969896620098> Rolüne sahip yetkililer senin ile ilgilenecektir. \n\n **Hesabın \`"+ gecen +"\` Önce Oluşturulmuş** \n\nSunucu kurallarımız <#823249970370052143> kanalında belirtilmiştir. Unutma sunucu içerisinde ki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek. \n\n Sunucumuzun \`" + member.guild.memberCount + "\` üyesi olmanı sağladı! İyi eğlenceler. ");
+   member.setNickname(` İsim | Yaş`);
+ });
 
 //////
  
